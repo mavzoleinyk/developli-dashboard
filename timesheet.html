@@ -46,10 +46,10 @@
                             </svg>
                         </div>
                         <ul class="sidebar-subitems">
-                            <li class="active">
+                            <li>
                                 <a href="#">Openings</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="#">My timesheet</a>
                             </li>
                         </ul>
@@ -220,8 +220,8 @@
             <div class="content__row">
                 <div class="content__row-title">
                     <div class="content__row-title__column">
-                        <h5>Openings</h5>
-                        <p class="p3">2 active vacancies</p>
+                        <h5>My timesheet</h5>
+                        <p class="p3">48 active vacancies</p>
                     </div>
                     <div class="mobile-sort">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -253,278 +253,167 @@
             </div>
             <div class="content__inner">
                 <div class="content__inner-base">
-                    <div class="vacancy-grid">
-                        <div class="vacancy-item">
-                            <div class="vacancy-item__top">
+                    <div class="timesheet-grid">
+                        <div class="timesheet-item">
+                            <div class="timesheet-item__top">
                                 <div class="badge">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.00016 1.33333C4.32683 1.33333 1.3335 4.32666 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32666 11.6735 1.33333 8.00016 1.33333ZM11.1868 6.46666L7.40683 10.2467C7.3135 10.34 7.18683 10.3933 7.0535 10.3933C6.92016 10.3933 6.7935 10.34 6.70016 10.2467L4.8135 8.35999C4.62016 8.16666 4.62016 7.84666 4.8135 7.65333C5.00683 7.45999 5.32683 7.45999 5.52016 7.65333L7.0535 9.18666L10.4802 5.76C10.6735 5.56666 10.9935 5.56666 11.1868 5.76C11.3802 5.95333 11.3802 6.26666 11.1868 6.46666Z" fill="white"/>
                                     </svg>                                        
                                     <span>Active</span>
                                 </div>
-                                <div class="vacancy-item__action">
-                                    <div class="edit">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.0529 4.53256L4.21122 11.7742C3.95289 12.0492 3.70289 12.5909 3.65289 12.9659L3.34455 15.6659C3.23622 16.6409 3.93622 17.3076 4.90289 17.1409L7.58622 16.6826C7.96122 16.6159 8.48622 16.3409 8.74455 16.0576L15.5862 8.8159C16.7696 7.5659 17.3029 6.1409 15.4612 4.39923C13.6279 2.67423 12.2362 3.28256 11.0529 4.53256Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.91211 5.74219C10.2704 8.04219 12.1371 9.80052 14.4538 10.0339" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                                                          
-                                    </div>
-                                    <div class="option">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.8333 11.6667C16.75 11.6667 17.5 10.9167 17.5 9.99999C17.5 9.08332 16.75 8.33332 15.8333 8.33332C14.9167 8.33332 14.1667 9.08332 14.1667 9.99999C14.1667 10.9167 14.9167 11.6667 15.8333 11.6667Z" fill="#7F879E"/>
-                                            <path d="M4.16659 11.6667C5.08325 11.6667 5.83325 10.9167 5.83325 9.99999C5.83325 9.08332 5.08325 8.33332 4.16659 8.33332C3.24992 8.33332 2.49992 9.08332 2.49992 9.99999C2.49992 10.9167 3.24992 11.6667 4.16659 11.6667Z" fill="#7F879E"/>
-                                            <path d="M10.0001 11.6667C10.9167 11.6667 11.6667 10.9167 11.6667 9.99999C11.6667 9.08332 10.9167 8.33332 10.0001 8.33332C9.08341 8.33332 8.33341 9.08332 8.33341 9.99999C8.33341 10.9167 9.08341 11.6667 10.0001 11.6667Z" fill="#7F879E"/>
-                                        </svg>    
-                                        <div class="option-content">
-                                            <ul>
-                                                <li class="blue">Hide this candidate</li>
-                                                <li>Archive</li>
-                                                <li>Options item</li>
-                                            </ul>
-                                        </div>                                            
-                                    </div>
+                                <div class="date">
+                                    Started: <span>24.02.2022</span>
                                 </div>
                             </div>
-                            <div class="vacancy-item__inner">
-                                <div class="h1">Senior Product Designer</div>
+                            <div class="timesheet-item__inner">
+                                <div class="h1">Landing page (in progress)</div>
                                 <ul>
-                                    <li class="location">
+                                    <li class="eshour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.9999 11.1917C11.4358 11.1917 12.5999 10.0276 12.5999 8.59167C12.5999 7.15573 11.4358 5.99167 9.9999 5.99167C8.56396 5.99167 7.3999 7.15573 7.3999 8.59167C7.3999 10.0276 8.56396 11.1917 9.9999 11.1917Z" stroke="#7F879E" stroke-width="1.5"/>
-                                            <path d="M3.01675 7.07499C4.65842 -0.141675 15.3501 -0.133341 16.9834 7.08333C17.9417 11.3167 15.3084 14.9 13.0001 17.1167C11.3251 18.7333 8.67508 18.7333 6.99175 17.1167C4.69175 14.9 2.05842 11.3083 3.01675 7.07499Z" stroke="#7F879E" stroke-width="1.5"/>
-                                        </svg>     
-                                        <p class="pm">California, USA</p>                                           
+                                            <path d="M17.2913 11.0417C17.2913 15.0667 14.0247 18.3333 9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                               
+                                        <p class="pm">Estimated hour: <span>10</span></p>                                           
                                     </li>
-                                    <li class="salary">
+                                    <li class="tothour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.22656 11.9415C7.22656 13.0165 8.05156 13.8832 9.07656 13.8832H11.1682C12.0599 13.8832 12.7849 13.1249 12.7849 12.1915C12.7849 11.1749 12.3432 10.8165 11.6849 10.5832L8.32656 9.41655C7.66823 9.18321 7.22656 8.82488 7.22656 7.80821C7.22656 6.87488 7.95156 6.11655 8.84323 6.11655H10.9349C11.9599 6.11655 12.7849 6.98321 12.7849 8.05821" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10 5V15" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 9.99999C18.3334 5.39762 14.6025 1.66666 10.0001 1.66666C5.39771 1.66666 1.66675 5.39762 1.66675 9.99999C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.417 15.4167V14.45C12.417 13.2583 13.267 12.7667 14.3003 13.3667L15.1337 13.85L15.967 14.3333C17.0003 14.9333 17.0003 15.9083 15.967 16.5083L15.1337 16.9917L14.3003 17.475C13.267 18.075 12.417 17.5833 12.417 16.3917V15.4167Z" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                         <p class="pm">
-                                            <span>$100,000</span>
-                                            <span>/Month</span>
+                                            <span>Total opening hours: </span>
+                                            <span>8</span>
                                         </p>                                             
-                                    </li>
-                                    <li class="test">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6667 18.3332 12.5V7.5C18.3332 3.33333 16.6665 1.66666 12.4998 1.66666H7.49984C3.33317 1.66666 1.6665 3.33333 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6.1084 12.075L8.09173 9.5C8.37507 9.13334 8.90007 9.06667 9.26673 9.35L10.7917 10.55C11.1584 10.8333 11.6834 10.7667 11.9667 10.4083L13.8917 7.925" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                 
-                                        <p class="pm">
-                                            Test required
-                                        </p>
-                                        <svg class="info-alt" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00016 1.33334C4.32683 1.33334 1.3335 4.32667 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32667 11.6735 1.33334 8.00016 1.33334ZM7.50016 5.33334C7.50016 5.06 7.72683 4.83334 8.00016 4.83334C8.2735 4.83334 8.50016 5.06 8.50016 5.33334V8.66667C8.50016 8.94 8.2735 9.16667 8.00016 9.16667C7.72683 9.16667 7.50016 8.94 7.50016 8.66667V5.33334ZM8.6135 10.92C8.58016 11.0067 8.5335 11.0733 8.4735 11.14C8.40683 11.2 8.3335 11.2467 8.2535 11.28C8.1735 11.3133 8.08683 11.3333 8.00016 11.3333C7.9135 11.3333 7.82683 11.3133 7.74683 11.28C7.66683 11.2467 7.5935 11.2 7.52683 11.14C7.46683 11.0733 7.42016 11.0067 7.38683 10.92C7.3535 10.84 7.3335 10.7533 7.3335 10.6667C7.3335 10.58 7.3535 10.4933 7.38683 10.4133C7.42016 10.3333 7.46683 10.26 7.52683 10.1933C7.5935 10.1333 7.66683 10.0867 7.74683 10.0533C7.90683 9.98667 8.0935 9.98667 8.2535 10.0533C8.3335 10.0867 8.40683 10.1333 8.4735 10.1933C8.5335 10.26 8.58016 10.3333 8.6135 10.4133C8.64683 10.4933 8.66683 10.58 8.66683 10.6667C8.66683 10.7533 8.64683 10.84 8.6135 10.92Z" fill="#1F8FFF"/>
-                                        </svg>                                                                                         
                                     </li>
                                 </ul>
                                 <div class="text">
                                     <p>We need urgently a Senior product designer can add missings part to an already existing website. It will be an urgent task, so we need an individual...</p>
                                 </div>
                             </div>
-                            <div class="vacancy-item__bottom">
-                                <div class="applications">
-                                    <div class="h3">
-                                        Applications (27)
+                            <div class="timesheet-item__bottom">
+                                <div class="dev-row">
+                                    <div class="img">
+                                        <img src="img/devs/1.webp" alt="">
                                     </div>
-                                    <ul class="application-list">
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/3.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/4.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/5.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/6.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/7.webp" alt="">
-                                        </li>
-                                        <li class="last">
-                                            22+
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="date">
-                                    Published: <span>Jan 28, 2022</span>
+                                    <div class="content">
+                                        <div class="h2">Chantelle Grant</div>
+                                        <p class="p4">Customer Experience Expert</p>
+                                    </div>
+                                    <p class="p4"><span>Hourly rate: </span>/$40</p>
+                                    <p class="mobp">$40 p.h.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="vacancy-item">
-                            <div class="vacancy-item__top">
+                        <div class="timesheet-item">
+                            <div class="timesheet-item__top">
                                 <div class="badge">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8.00016 1.33333C4.32683 1.33333 1.3335 4.32666 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32666 11.6735 1.33333 8.00016 1.33333ZM11.1868 6.46666L7.40683 10.2467C7.3135 10.34 7.18683 10.3933 7.0535 10.3933C6.92016 10.3933 6.7935 10.34 6.70016 10.2467L4.8135 8.35999C4.62016 8.16666 4.62016 7.84666 4.8135 7.65333C5.00683 7.45999 5.32683 7.45999 5.52016 7.65333L7.0535 9.18666L10.4802 5.76C10.6735 5.56666 10.9935 5.56666 11.1868 5.76C11.3802 5.95333 11.3802 6.26666 11.1868 6.46666Z" fill="white"/>
                                     </svg>                                        
                                     <span>Active</span>
                                 </div>
-                                <div class="vacancy-item__action">
-                                    <div class="edit">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.0529 4.53256L4.21122 11.7742C3.95289 12.0492 3.70289 12.5909 3.65289 12.9659L3.34455 15.6659C3.23622 16.6409 3.93622 17.3076 4.90289 17.1409L7.58622 16.6826C7.96122 16.6159 8.48622 16.3409 8.74455 16.0576L15.5862 8.8159C16.7696 7.5659 17.3029 6.1409 15.4612 4.39923C13.6279 2.67423 12.2362 3.28256 11.0529 4.53256Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.91211 5.74219C10.2704 8.04219 12.1371 9.80052 14.4538 10.0339" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                
-                                    </div>
-                                    <div class="option">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.8333 11.6667C16.75 11.6667 17.5 10.9167 17.5 9.99999C17.5 9.08332 16.75 8.33332 15.8333 8.33332C14.9167 8.33332 14.1667 9.08332 14.1667 9.99999C14.1667 10.9167 14.9167 11.6667 15.8333 11.6667Z" fill="#7F879E"/>
-                                            <path d="M4.16659 11.6667C5.08325 11.6667 5.83325 10.9167 5.83325 9.99999C5.83325 9.08332 5.08325 8.33332 4.16659 8.33332C3.24992 8.33332 2.49992 9.08332 2.49992 9.99999C2.49992 10.9167 3.24992 11.6667 4.16659 11.6667Z" fill="#7F879E"/>
-                                            <path d="M10.0001 11.6667C10.9167 11.6667 11.6667 10.9167 11.6667 9.99999C11.6667 9.08332 10.9167 8.33332 10.0001 8.33332C9.08341 8.33332 8.33341 9.08332 8.33341 9.99999C8.33341 10.9167 9.08341 11.6667 10.0001 11.6667Z" fill="#7F879E"/>
-                                        </svg>    
-                                        <div class="option-content">
-                                            <ul>
-                                                <li class="blue">Hide this candidate</li>
-                                                <li>Archive</li>
-                                                <li>Options item</li>
-                                            </ul>
-                                        </div>                                            
-                                    </div>
+                                <div class="date">
+                                    Started: <span>24.02.2022</span>
                                 </div>
                             </div>
-                            <div class="vacancy-item__inner">
-                                <div class="h1">Java Developer</div>
+                            <div class="timesheet-item__inner">
+                                <div class="h1">Landing page (in progress)</div>
                                 <ul>
-                                    <li class="location">
+                                    <li class="eshour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.9999 11.1917C11.4358 11.1917 12.5999 10.0276 12.5999 8.59167C12.5999 7.15573 11.4358 5.99167 9.9999 5.99167C8.56396 5.99167 7.3999 7.15573 7.3999 8.59167C7.3999 10.0276 8.56396 11.1917 9.9999 11.1917Z" stroke="#7F879E" stroke-width="1.5"/>
-                                            <path d="M3.01675 7.07499C4.65842 -0.141675 15.3501 -0.133341 16.9834 7.08333C17.9417 11.3167 15.3084 14.9 13.0001 17.1167C11.3251 18.7333 8.67508 18.7333 6.99175 17.1167C4.69175 14.9 2.05842 11.3083 3.01675 7.07499Z" stroke="#7F879E" stroke-width="1.5"/>
-                                        </svg>     
-                                        <p class="pm">United Arab Emirates</p>                                           
+                                            <path d="M17.2913 11.0417C17.2913 15.0667 14.0247 18.3333 9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                               
+                                        <p class="pm">Estimated hour: <span>10</span></p>                                           
                                     </li>
-                                    <li class="salary">
+                                    <li class="tothour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.22656 11.9415C7.22656 13.0165 8.05156 13.8832 9.07656 13.8832H11.1682C12.0599 13.8832 12.7849 13.1249 12.7849 12.1915C12.7849 11.1749 12.3432 10.8165 11.6849 10.5832L8.32656 9.41655C7.66823 9.18321 7.22656 8.82488 7.22656 7.80821C7.22656 6.87488 7.95156 6.11655 8.84323 6.11655H10.9349C11.9599 6.11655 12.7849 6.98321 12.7849 8.05821" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10 5V15" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 9.99999C18.3334 5.39762 14.6025 1.66666 10.0001 1.66666C5.39771 1.66666 1.66675 5.39762 1.66675 9.99999C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.417 15.4167V14.45C12.417 13.2583 13.267 12.7667 14.3003 13.3667L15.1337 13.85L15.967 14.3333C17.0003 14.9333 17.0003 15.9083 15.967 16.5083L15.1337 16.9917L14.3003 17.475C13.267 18.075 12.417 17.5833 12.417 16.3917V15.4167Z" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                         <p class="pm">
-                                            <span>$100,000</span>
-                                            <span>/Month</span>
+                                            <span>Total opening hours: </span>
+                                            <span>8</span>
                                         </p>                                             
-                                    </li>
-                                    <li class="test">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6667 18.3332 12.5V7.5C18.3332 3.33333 16.6665 1.66666 12.4998 1.66666H7.49984C3.33317 1.66666 1.6665 3.33333 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6.1084 12.075L8.09173 9.5C8.37507 9.13334 8.90007 9.06667 9.26673 9.35L10.7917 10.55C11.1584 10.8333 11.6834 10.7667 11.9667 10.4083L13.8917 7.925" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                 
-                                        <p class="pm">
-                                            Test required
-                                        </p>
-                                        <svg class="info-alt" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00016 1.33334C4.32683 1.33334 1.3335 4.32667 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32667 11.6735 1.33334 8.00016 1.33334ZM7.50016 5.33334C7.50016 5.06 7.72683 4.83334 8.00016 4.83334C8.2735 4.83334 8.50016 5.06 8.50016 5.33334V8.66667C8.50016 8.94 8.2735 9.16667 8.00016 9.16667C7.72683 9.16667 7.50016 8.94 7.50016 8.66667V5.33334ZM8.6135 10.92C8.58016 11.0067 8.5335 11.0733 8.4735 11.14C8.40683 11.2 8.3335 11.2467 8.2535 11.28C8.1735 11.3133 8.08683 11.3333 8.00016 11.3333C7.9135 11.3333 7.82683 11.3133 7.74683 11.28C7.66683 11.2467 7.5935 11.2 7.52683 11.14C7.46683 11.0733 7.42016 11.0067 7.38683 10.92C7.3535 10.84 7.3335 10.7533 7.3335 10.6667C7.3335 10.58 7.3535 10.4933 7.38683 10.4133C7.42016 10.3333 7.46683 10.26 7.52683 10.1933C7.5935 10.1333 7.66683 10.0867 7.74683 10.0533C7.90683 9.98667 8.0935 9.98667 8.2535 10.0533C8.3335 10.0867 8.40683 10.1333 8.4735 10.1933C8.5335 10.26 8.58016 10.3333 8.6135 10.4133C8.64683 10.4933 8.66683 10.58 8.66683 10.6667C8.66683 10.7533 8.64683 10.84 8.6135 10.92Z" fill="#1F8FFF"/>
-                                        </svg>                                                                                         
                                     </li>
                                 </ul>
                                 <div class="text">
                                     <p>We need urgently a Senior product designer can add missings part to an already existing website. It will be an urgent task, so we need an individual...</p>
                                 </div>
                             </div>
-                            <div class="vacancy-item__bottom">
-                                <div class="applications">
-                                    <div class="h3">
-                                        Applications (27)
+                            <div class="timesheet-item__bottom">
+                                <div class="dev-row">
+                                    <div class="img">
+                                        <img src="img/devs/1.webp" alt="">
                                     </div>
-                                    <ul class="application-list">
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/3.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/4.webp" alt="">
-                                        </li>
-                                        <li>
-                                            <img width="38" height="38" src="img/devs/5.webp" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="date">
-                                    Published: <span>Jan 28, 2022</span>
+                                    <div class="content">
+                                        <div class="h2">Chantelle Grant</div>
+                                        <p class="p4">Customer Experience Expert</p>
+                                    </div>
+                                    <p class="p4"><span>Hourly rate: </span>/$40</p>
+                                    <p class="mobp">$40 p.h.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="vacancy-item">
-                            <div class="vacancy-item__top">
-                                <div class="badge orange">
+                        <div class="timesheet-item">
+                            <div class="timesheet-item__top">
+                                <div class="badge">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14.6668 3.33331V4.66665C14.6668 5.88665 14.1135 6.54665 13.0002 6.64665C12.8935 6.65998 12.7802 6.66665 12.6668 6.66665H3.3335C3.22016 6.66665 3.10683 6.65998 3.00016 6.64665C1.88683 6.54665 1.3335 5.88665 1.3335 4.66665V3.33331C1.3335 1.99998 2.00016 1.33331 3.3335 1.33331H12.6668C14.0002 1.33331 14.6668 1.99998 14.6668 3.33331Z" fill="white"/>
-                                        <path d="M3.66667 7.5C3.3 7.5 3 7.8 3 8.16667V12.6667C3 14 3.33333 14.6667 5 14.6667H11C12.6667 14.6667 13 14 13 12.6667V8.16667C13 7.8 12.7 7.5 12.3333 7.5H3.66667ZM9.21333 10.5H6.78667C6.51333 10.5 6.28667 10.2733 6.28667 10C6.28667 9.72667 6.51333 9.5 6.78667 9.5H9.21333C9.48667 9.5 9.71333 9.72667 9.71333 10C9.71333 10.2733 9.48667 10.5 9.21333 10.5Z" fill="white"/>
-                                    </svg>                                                                              
-                                    <span>Draft</span>
+                                        <path d="M8.00016 1.33333C4.32683 1.33333 1.3335 4.32666 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32666 11.6735 1.33333 8.00016 1.33333ZM11.1868 6.46666L7.40683 10.2467C7.3135 10.34 7.18683 10.3933 7.0535 10.3933C6.92016 10.3933 6.7935 10.34 6.70016 10.2467L4.8135 8.35999C4.62016 8.16666 4.62016 7.84666 4.8135 7.65333C5.00683 7.45999 5.32683 7.45999 5.52016 7.65333L7.0535 9.18666L10.4802 5.76C10.6735 5.56666 10.9935 5.56666 11.1868 5.76C11.3802 5.95333 11.3802 6.26666 11.1868 6.46666Z" fill="white"/>
+                                    </svg>                                        
+                                    <span>Active</span>
                                 </div>
-                                <div class="vacancy-item__action">
-                                    <div class="edit">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.0529 4.53256L4.21122 11.7742C3.95289 12.0492 3.70289 12.5909 3.65289 12.9659L3.34455 15.6659C3.23622 16.6409 3.93622 17.3076 4.90289 17.1409L7.58622 16.6826C7.96122 16.6159 8.48622 16.3409 8.74455 16.0576L15.5862 8.8159C16.7696 7.5659 17.3029 6.1409 15.4612 4.39923C13.6279 2.67423 12.2362 3.28256 11.0529 4.53256Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M9.91211 5.74219C10.2704 8.04219 12.1371 9.80052 14.4538 10.0339" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                  
-                                    </div>
-                                    <div class="option">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M15.8333 11.6667C16.75 11.6667 17.5 10.9167 17.5 9.99999C17.5 9.08332 16.75 8.33332 15.8333 8.33332C14.9167 8.33332 14.1667 9.08332 14.1667 9.99999C14.1667 10.9167 14.9167 11.6667 15.8333 11.6667Z" fill="#7F879E"/>
-                                            <path d="M4.16659 11.6667C5.08325 11.6667 5.83325 10.9167 5.83325 9.99999C5.83325 9.08332 5.08325 8.33332 4.16659 8.33332C3.24992 8.33332 2.49992 9.08332 2.49992 9.99999C2.49992 10.9167 3.24992 11.6667 4.16659 11.6667Z" fill="#7F879E"/>
-                                            <path d="M10.0001 11.6667C10.9167 11.6667 11.6667 10.9167 11.6667 9.99999C11.6667 9.08332 10.9167 8.33332 10.0001 8.33332C9.08341 8.33332 8.33341 9.08332 8.33341 9.99999C8.33341 10.9167 9.08341 11.6667 10.0001 11.6667Z" fill="#7F879E"/>
-                                        </svg>    
-                                        <div class="option-content">
-                                            <ul>
-                                                <li class="blue">Hide this candidate</li>
-                                                <li>Archive</li>
-                                                <li>Options item</li>
-                                            </ul>
-                                        </div>                                            
-                                    </div>
+                                <div class="date">
+                                    Started: <span>24.02.2022</span>
                                 </div>
                             </div>
-                            <div class="vacancy-item__inner">
-                                <div class="h1">Java Developer</div>
+                            <div class="timesheet-item__inner">
+                                <div class="h1">Landing page (in progress)</div>
                                 <ul>
-                                    <li class="location">
+                                    <li class="eshour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.9999 11.1917C11.4358 11.1917 12.5999 10.0276 12.5999 8.59167C12.5999 7.15573 11.4358 5.99167 9.9999 5.99167C8.56396 5.99167 7.3999 7.15573 7.3999 8.59167C7.3999 10.0276 8.56396 11.1917 9.9999 11.1917Z" stroke="#7F879E" stroke-width="1.5"/>
-                                            <path d="M3.01675 7.07499C4.65842 -0.141675 15.3501 -0.133341 16.9834 7.08333C17.9417 11.3167 15.3084 14.9 13.0001 17.1167C11.3251 18.7333 8.67508 18.7333 6.99175 17.1167C4.69175 14.9 2.05842 11.3083 3.01675 7.07499Z" stroke="#7F879E" stroke-width="1.5"/>
-                                        </svg>     
-                                        <p class="pm">United Arab Emirates</p>                                           
+                                            <path d="M17.2913 11.0417C17.2913 15.0667 14.0247 18.3333 9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                               
+                                        <p class="pm">Estimated hour: <span>10</span></p>                                           
                                     </li>
-                                    <li class="salary">
+                                    <li class="tothour">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.22656 11.9415C7.22656 13.0165 8.05156 13.8832 9.07656 13.8832H11.1682C12.0599 13.8832 12.7849 13.1249 12.7849 12.1915C12.7849 11.1749 12.3432 10.8165 11.6849 10.5832L8.32656 9.41655C7.66823 9.18321 7.22656 8.82488 7.22656 7.80821C7.22656 6.87488 7.95156 6.11655 8.84323 6.11655H10.9349C11.9599 6.11655 12.7849 6.98321 12.7849 8.05821" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10 5V15" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.0001 18.3333C14.6025 18.3333 18.3334 14.6024 18.3334 9.99999C18.3334 5.39762 14.6025 1.66666 10.0001 1.66666C5.39771 1.66666 1.66675 5.39762 1.66675 9.99999C1.66675 14.6024 5.39771 18.3333 10.0001 18.3333Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
+                                            <path d="M10 6.66667V10.8333" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.99967 18.3333C5.97467 18.3333 2.70801 15.0667 2.70801 11.0417C2.70801 7.01667 5.97467 3.75 9.99967 3.75C14.0247 3.75 17.2913 7.01667 17.2913 11.0417" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M7.5 1.66667H12.5" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M12.417 15.4167V14.45C12.417 13.2583 13.267 12.7667 14.3003 13.3667L15.1337 13.85L15.967 14.3333C17.0003 14.9333 17.0003 15.9083 15.967 16.5083L15.1337 16.9917L14.3003 17.475C13.267 18.075 12.417 17.5833 12.417 16.3917V15.4167Z" stroke="#7F879E" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
                                         <p class="pm">
-                                            <span>$100,000</span>
-                                            <span>/Month</span>
+                                            <span>Total opening hours: </span>
+                                            <span>8</span>
                                         </p>                                             
-                                    </li>
-                                    <li class="test">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.49984 18.3333H12.4998C16.6665 18.3333 18.3332 16.6667 18.3332 12.5V7.5C18.3332 3.33333 16.6665 1.66666 12.4998 1.66666H7.49984C3.33317 1.66666 1.6665 3.33333 1.6665 7.5V12.5C1.6665 16.6667 3.33317 18.3333 7.49984 18.3333Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6.1084 12.075L8.09173 9.5C8.37507 9.13334 8.90007 9.06667 9.26673 9.35L10.7917 10.55C11.1584 10.8333 11.6834 10.7667 11.9667 10.4083L13.8917 7.925" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                                 
-                                        <p class="pm">
-                                            Test required
-                                        </p>
-                                        <svg class="info-alt" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00016 1.33334C4.32683 1.33334 1.3335 4.32667 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32667 11.6735 1.33334 8.00016 1.33334ZM7.50016 5.33334C7.50016 5.06 7.72683 4.83334 8.00016 4.83334C8.2735 4.83334 8.50016 5.06 8.50016 5.33334V8.66667C8.50016 8.94 8.2735 9.16667 8.00016 9.16667C7.72683 9.16667 7.50016 8.94 7.50016 8.66667V5.33334ZM8.6135 10.92C8.58016 11.0067 8.5335 11.0733 8.4735 11.14C8.40683 11.2 8.3335 11.2467 8.2535 11.28C8.1735 11.3133 8.08683 11.3333 8.00016 11.3333C7.9135 11.3333 7.82683 11.3133 7.74683 11.28C7.66683 11.2467 7.5935 11.2 7.52683 11.14C7.46683 11.0733 7.42016 11.0067 7.38683 10.92C7.3535 10.84 7.3335 10.7533 7.3335 10.6667C7.3335 10.58 7.3535 10.4933 7.38683 10.4133C7.42016 10.3333 7.46683 10.26 7.52683 10.1933C7.5935 10.1333 7.66683 10.0867 7.74683 10.0533C7.90683 9.98667 8.0935 9.98667 8.2535 10.0533C8.3335 10.0867 8.40683 10.1333 8.4735 10.1933C8.5335 10.26 8.58016 10.3333 8.6135 10.4133C8.64683 10.4933 8.66683 10.58 8.66683 10.6667C8.66683 10.7533 8.64683 10.84 8.6135 10.92Z" fill="#1F8FFF"/>
-                                        </svg>                                                                                         
                                     </li>
                                 </ul>
                                 <div class="text">
                                     <p>We need urgently a Senior product designer can add missings part to an already existing website. It will be an urgent task, so we need an individual...</p>
                                 </div>
                             </div>
-                            <div class="vacancy-item__bottom">
-                                <button class="btn secondary">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M14 4.66665V11.3333C14 13.3333 13 14.6666 10.6667 14.6666H5.33333C3 14.6666 2 13.3333 2 11.3333V4.66665C2 2.66665 3 1.33331 5.33333 1.33331H10.6667C13 1.33331 14 2.66665 14 4.66665Z" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M9.6665 3V4.33333C9.6665 5.06667 10.2665 5.66667 10.9998 5.66667H12.3332" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M5.3335 8.66669H8.00016" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M5.3335 11.3333H10.6668" stroke="white" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>    
-                                    <span>Publish</span>                                    
-                                </button>
+                            <div class="timesheet-item__bottom">
+                                <div class="dev-row">
+                                    <div class="img">
+                                        <img src="img/devs/1.webp" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="h2">Chantelle Grant</div>
+                                        <p class="p4">Customer Experience Expert</p>
+                                    </div>
+                                    <p class="p4"><span>Hourly rate: </span>/$40</p>
+                                    <p class="mobp">$40 p.h.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1881,6 +1770,130 @@
                     </button>
                 </div>
             </form>
+        </div>
+        <div class="popup-object project__details-popup">
+            <div class="title-row">
+                <div class="h1">Project details</div>
+                <div class="p-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.666 12.6667L3.33331 3.33395" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 3.33395L3.33398 12.6667" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                </div>                     
+            </div>
+            <div class="project__details-popup__inner">
+                <div class="row__top">
+                    <div class="badge">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.00016 1.33333C4.32683 1.33333 1.3335 4.32666 1.3335 8C1.3335 11.6733 4.32683 14.6667 8.00016 14.6667C11.6735 14.6667 14.6668 11.6733 14.6668 8C14.6668 4.32666 11.6735 1.33333 8.00016 1.33333ZM11.1868 6.46666L7.40683 10.2467C7.3135 10.34 7.18683 10.3933 7.0535 10.3933C6.92016 10.3933 6.7935 10.34 6.70016 10.2467L4.8135 8.35999C4.62016 8.16666 4.62016 7.84666 4.8135 7.65333C5.00683 7.45999 5.32683 7.45999 5.52016 7.65333L7.0535 9.18666L10.4802 5.76C10.6735 5.56666 10.9935 5.56666 11.1868 5.76C11.3802 5.95333 11.3802 6.26666 11.1868 6.46666Z" fill="white"/>
+                        </svg>                                        
+                        <span>Active</span>
+                    </div>
+                    <div class="date">
+                        Started: <span>24.02.2022</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="h1">Landing page (in progress)</div>
+                    <div class="date">
+                        Started: <span>24.02.2022</span>
+                    </div>
+                    <div class="block">
+                        <div class="h2">Project Description</div>
+                        <div class="text">
+                            <p class="p2">Frogwares is currently looking for a Narrative Designer to join the dynamic team of game designers for its upcoming titles. Our expert team creates games which are highly praised by millions of players, as well as industry experts all over the world.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="h2">Requirements</div>
+                        <div class="list">
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" fill="#47D18C"/>
+                                    <circle cx="9" cy="9" r="2.25" fill="white"/>
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" stroke="#47D18C" stroke-width="1.5"/>
+                                    </g>
+                                </svg>    
+                                <span>At least 3 years of experience on a similar position;</span>                                
+                            </p>
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" fill="#47D18C"/>
+                                    <circle cx="9" cy="9" r="2.25" fill="white"/>
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" stroke="#47D18C" stroke-width="1.5"/>
+                                    </g>
+                                </svg>    
+                                <span>English – Upper intermediate (B2) or higher;</span>                                
+                            </p>
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" fill="#47D18C"/>
+                                    <circle cx="9" cy="9" r="2.25" fill="white"/>
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" stroke="#47D18C" stroke-width="1.5"/>
+                                    </g>
+                                </svg>    
+                                <span>Strong dramatic writing skills in English;</span>                                
+                            </p>
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" fill="#47D18C"/>
+                                    <circle cx="9" cy="9" r="2.25" fill="white"/>
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" stroke="#47D18C" stroke-width="1.5"/>
+                                    </g>
+                                </svg>    
+                                <span>Deep understanding of story structure, non-linear narrative methods;</span>                                
+                            </p>
+                            <p>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" fill="#47D18C"/>
+                                    <circle cx="9" cy="9" r="2.25" fill="white"/>
+                                    <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="6.75" stroke="#47D18C" stroke-width="1.5"/>
+                                    </g>
+                                </svg>    
+                                <span>Passion for video games of various genres, especially for the open-world genre;</span>                                
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dev-row">
+                        <div class="img">
+                            <img src="img/devs/1.webp" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="h2">Chantelle Grant</div>
+                            <p class="p4">Customer Experience Expert</p>
+                        </div>
+                        <p class="p4"><span>Hourly rate: </span>/$40</p>
+                        <p class="mobp">$40 p.h.</p>
+                    </div>
+                    <div class="row__bottom">
+                        <div class="left">
+                            <div class="hour">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.22656 11.9415C7.22656 13.0165 8.05156 13.8831 9.07656 13.8831H11.1682C12.0599 13.8831 12.7849 13.1248 12.7849 12.1915C12.7849 11.1748 12.3432 10.8165 11.6849 10.5831L8.32656 9.41645C7.66823 9.18312 7.22656 8.82479 7.22656 7.80812C7.22656 6.87479 7.95156 6.11646 8.84323 6.11646H10.9349C11.9599 6.11646 12.7849 6.98312 12.7849 8.05812" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 5V15" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.0003 18.3334C14.6027 18.3334 18.3337 14.6025 18.3337 10.0001C18.3337 5.39771 14.6027 1.66675 10.0003 1.66675C5.39795 1.66675 1.66699 5.39771 1.66699 10.0001C1.66699 14.6025 5.39795 18.3334 10.0003 18.3334Z" stroke="#7F879E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                                <p>Unpayed hours <span>20</span></p>                                
+                            </div>
+                            <button class="btn secondary">Pay</button>
+                        </div>
+                        <div class="right">
+                            <div class="checkbox-item">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="custom-checkbox">
+                                    <div class="tick"><img width="20" height="20" src="img/icons/tick.svg" alt=""></div>
+                                </div>
+                                <label class="p4" for="">Enable automatic weekly payment</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="layout"></div>
     </div>
