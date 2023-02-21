@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develipli</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.3/swiper-bundle.min.css" integrity="sha512-0zV3XjOzzT7F2vWvToeJ20Tq4ESd7V43WCMmIZTzAcREHXA2cKxfYbdkTzJva3OrXG3+WDgKvewywWEduirJIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/main.min.css">
+</head>
+<body>
+    
+
+    <div class="dashboard-wrapper">
+        <div class="sidebar">
+            <div class="row">
+                <div class="burger">
+                    <div class="burger__line"></div>
+                </div>
+                <div class="logo">
+                    <img src="img/icons/logoMain.svg" width="140" height="34" alt="">
+                </div>
+            </div>
+            <div class="sidebar__inner">
+                <ul>
+                    <li>
+                        <div class="sidebar-item">
+                            <svg class="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.24 2H5.34C3.15 2 2 3.15 2 5.33V7.23C2 9.41 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.41 10.56 7.23V5.33C10.57 3.15 9.42 2 7.24 2Z" fill="#7F879E"/>
+                                <path d="M18.6699 2H16.7699C14.5899 2 13.4399 3.15 13.4399 5.33V7.23C13.4399 9.41 14.5899 10.56 16.7699 10.56H18.6699C20.8499 10.56 21.9999 9.41 21.9999 7.23V5.33C21.9999 3.15 20.8499 2 18.6699 2Z" fill="#7F879E"/>
+                                <path d="M18.6699 13.43H16.7699C14.5899 13.43 13.4399 14.58 13.4399 16.76V18.66C13.4399 20.84 14.5899 21.99 16.7699 21.99H18.6699C20.8499 21.99 21.9999 20.84 21.9999 18.66V16.76C21.9999 14.58 20.8499 13.43 18.6699 13.43Z" fill="#7F879E"/>
+                                <path d="M7.24 13.43H5.34C3.15 13.43 2 14.58 2 16.76V18.66C2 20.85 3.15 22 5.33 22H7.23C9.41 22 10.56 20.85 10.56 18.67V16.77C10.57 14.58 9.42 13.43 7.24 13.43Z" fill="#7F879E"/>
+                            </svg>   
+                            <span>Dashboard</span> 
+                        </div>
+                    </li>
+                    <li class="has-items">
+                        <div class="sidebar-item">
+                            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M13.5 8C10.47 8 8 10.48 8 13.5C8 16 8 16 10.5 16C13.52 16 16 13.52 16 10.5C16 7.92428 16 8 13.5 8Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                            <span>My jobs</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.96004 4.47501L6.70004 7.73501C6.31504 8.12001 5.68504 8.12001 5.30004 7.73501L2.04004 4.47501" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <ul class="sidebar-subitems">
+                            <li>
+                                <a href="#">Openings</a>
+                            </li>
+                            <li>
+                                <a href="#">My timesheet</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-items">
+                        <div class="sidebar-item">
+                            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.40991 22C3.40991 18.13 7.25991 15 11.9999 15C12.9599 15 13.8899 15.13 14.7599 15.37" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 18C22 18.75 21.79 19.46 21.42 20.06C21.21 20.42 20.94 20.74 20.63 21C19.93 21.63 19.01 22 18 22C16.54 22 15.27 21.22 14.58 20.06C14.21 19.46 14 18.75 14 18C14 16.74 14.58 15.61 15.5 14.88C16.19 14.33 17.06 14 18 14C20.21 14 22 15.79 22 18Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.4399 18L17.4299 18.99L19.5599 17.02" stroke="#151B33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                              
+                            <span>Candidates</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.96004 4.47501L6.70004 7.73501C6.31504 8.12001 5.68504 8.12001 5.30004 7.73501L2.04004 4.47501" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <ul class="sidebar-subitems">
+                            <li>
+                                <a href="#">Openings</a>
+                            </li>
+                            <li>
+                                <a href="#">My timesheet</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="sidebar-item">
+                            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 10V13C22 17 20 19 16 19H15.5C15.19 19 14.89 19.15 14.7 19.4L13.2 21.4C12.54 22.28 11.46 22.28 10.8 21.4L9.3 19.4C9.14 19.18 8.77 19 8.5 19H8C4 19 2 18 2 13V8C2 4 4 2 8 2H14" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path class="has-message" d="M19.5 7C20.8807 7 22 5.88071 22 4.5C22 3.11929 20.8807 2 19.5 2C18.1193 2 17 3.11929 17 4.5C17 5.88071 18.1193 7 19.5 7Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.9965 11H16.0054" stroke="#7F879E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.9955 11H12.0045" stroke="#7F879E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.99451 11H8.00349" stroke="#7F879E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                               
+                            <span>Messages</span>
+                            <span class="active-value">84</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="sidebar-item active">
+                            <svg class="fill" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 2V5" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 2V5" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.75 17.6H3.25" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8.25C10.77 8.25 9.73 8.92 9.73 10.22C9.73 10.84 10.02 11.31 10.46 11.61C9.85 11.97 9.5 12.55 9.5 13.23C9.5 14.47 10.45 15.24 12 15.24C13.54 15.24 14.5 14.47 14.5 13.23C14.5 12.55 14.15 11.96 13.53 11.61C13.98 11.3 14.26 10.84 14.26 10.22C14.26 8.92 13.23 8.25 12 8.25ZM12 11.09C11.48 11.09 11.1 10.78 11.1 10.29C11.1 9.79 11.48 9.5 12 9.5C12.52 9.5 12.9 9.79 12.9 10.29C12.9 10.78 12.52 11.09 12 11.09ZM12 14C11.34 14 10.86 13.67 10.86 13.07C10.86 12.47 11.34 12.15 12 12.15C12.66 12.15 13.14 12.48 13.14 13.07C13.14 13.67 12.66 14 12 14Z" fill="#7F879E"/>
+                            </svg>                                                               
+                            <span>My interviews</span>
+                        </div>
+                    </li>
+                    <li class="mb-item">
+                        <div class="sidebar-item">
+                        <svg class="mixed" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.0495 2.53L4.02953 6.46C2.09953 7.72 2.09953 10.54 4.02953 11.8L10.0495 15.73C11.1295 16.44 12.9095 16.44 13.9895 15.73L19.9795 11.8C21.8995 10.54 21.8995 7.73 19.9795 6.47L13.9895 2.54C12.9095 1.82 11.1295 1.82 10.0495 2.53Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.63012 13.08L5.62012 17.77C5.62012 19.04 6.60012 20.4 7.80012 20.8L10.9901 21.86C11.5401 22.04 12.4501 22.04 13.0101 21.86L16.2001 20.8C17.4001 20.4 18.3801 19.04 18.3801 17.77V13.13" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.4004 15V9" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                                                                                          
+                            <span>Tests</span>
+                        </div>
+                    </li>
+                    <li class="has-items">
+                        <div class="sidebar-item">
+                            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.00007 22H16.0001C20.0201 22 20.7401 20.39 20.9501 18.43L21.7001 10.43C21.9701 7.99 21.2701 6 17.0001 6H7.00007C2.73007 6 2.03007 7.99 2.30007 10.43L3.05007 18.43C3.26007 20.39 3.98007 22 8.00007 22Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.62012 11.27C4.87012 12.81 7.41012 13.74 10.0001 14.03" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                                                                            
+                            <span>My Company</span>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.96004 4.47501L6.70004 7.73501C6.31504 8.12001 5.68504 8.12001 5.30004 7.73501L2.04004 4.47501" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <ul class="sidebar-subitems">
+                            <li class="active">
+                                <a href="#">Company profile</a>
+                            </li>
+                            <li>
+                                <a href="#">My team</a>
+                            </li>
+                            <li>
+                                <a href="#">Payment plan</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="sidebar-item">
+                            <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10"/>
+                                <path d="M13.5 8C10.47 8 8 10.48 8 13.5C8 16 8 16 10.5 16C13.52 16 16 13.52 16 10.5C16 7.92428 16 8 13.5 8Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                            <span>Help Center</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="logout-btn p2 pm">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.8999 7.55999C9.2099 3.95999 11.0599 2.48999 15.1099 2.48999H15.2399C19.7099 2.48999 21.4999 4.27999 21.4999 8.74999V15.27C21.4999 19.74 19.7099 21.53 15.2399 21.53H15.1099C11.0899 21.53 9.2399 20.08 8.9099 16.54" stroke="#F05817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15.0001 12H3.62012" stroke="#F05817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5.85 8.65002L2.5 12L5.85 15.35" stroke="#F05817" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>     
+                <span>Logout</span>            
+            </button>
+        </div>
+        <div class="content">
+            <header class="header">
+                <div class="row">
+                    <div class="burger">
+                        <div class="burger__line"></div>
+                    </div>
+                    <div class="header-logo">
+                        <img src="img/icons/logoMain.svg" width="140" height="34" alt="">
+                    </div>
+                    <div class="search-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 22L20 20" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>   
+                        <input type="search" placeholder="Search">
+                        <div class="select-wrapper">
+                            <select>
+                                <option value="All">All</option>
+                                <option value="Candidates">Candidates</option>
+                                <option value="Candidates">Candidates</option>
+                            </select>
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.29995 3.72916L5.58328 6.44582C5.26245 6.76666 4.73745 6.76666 4.41662 6.44582L1.69995 3.72916" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </div>               
+                    </div>
+                    <div class="notification" data-count="218">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5201 2.91C9.21009 2.91 6.52009 5.6 6.52009 8.91V11.8C6.52009 12.41 6.26009 13.34 5.95009 13.86L4.80009 15.77C4.09009 16.95 4.58009 18.26 5.88009 18.7C10.1901 20.14 14.8401 20.14 19.1501 18.7C20.3601 18.3 20.8901 16.87 20.2301 15.77L19.0801 13.86C18.7801 13.34 18.5201 12.41 18.5201 11.8V8.91C18.5201 5.61 15.8201 2.91 12.5201 2.91Z" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                            <path d="M14.3699 3.2C14.0599 3.11 13.7399 3.04 13.4099 3C12.4499 2.88 11.5299 2.95 10.6699 3.2C10.9599 2.46 11.6799 1.94 12.5199 1.94C13.3599 1.94 14.0799 2.46 14.3699 3.2Z" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.52 19.06C15.52 20.71 14.17 22.06 12.52 22.06C11.7 22.06 10.94 21.72 10.4 21.18C9.86002 20.64 9.52002 19.88 9.52002 19.06" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10"/>
+                        </svg>                        
+                    </div>
+                    <div class="settings"> 
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.7617 15.1963C14.4186 15.1963 15.7617 13.8531 15.7617 12.1963C15.7617 10.5394 14.4186 9.19629 12.7617 9.19629C11.1049 9.19629 9.76172 10.5394 9.76172 12.1963C9.76172 13.8531 11.1049 15.1963 12.7617 15.1963Z" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.76172 13.0763V11.3163C2.76172 10.2763 3.61172 9.41629 4.66172 9.41629C6.47172 9.41629 7.21172 8.13629 6.30172 6.56629C5.78172 5.66629 6.09172 4.49629 7.00172 3.97629L8.73172 2.98629C9.52172 2.51629 10.5417 2.79629 11.0117 3.58629L11.1217 3.77629C12.0217 5.34629 13.5017 5.34629 14.4117 3.77629L14.5217 3.58629C14.9917 2.79629 16.0117 2.51629 16.8017 2.98629L18.5317 3.97629C19.4417 4.49629 19.7517 5.66629 19.2317 6.56629C18.3217 8.13629 19.0617 9.41629 20.8717 9.41629C21.9117 9.41629 22.7717 10.2663 22.7717 11.3163V13.0763C22.7717 14.1163 21.9217 14.9763 20.8717 14.9763C19.0617 14.9763 18.3217 16.2563 19.2317 17.8263C19.7517 18.7363 19.4417 19.8963 18.5317 20.4163L16.8017 21.4063C16.0117 21.8763 14.9917 21.5963 14.5217 20.8063L14.4117 20.6163C13.5117 19.0463 12.0317 19.0463 11.1217 20.6163L11.0117 20.8063C10.5417 21.5963 9.52172 21.8763 8.73172 21.4063L7.00172 20.4163C6.09172 19.8963 5.78172 18.7263 6.30172 17.8263C7.21172 16.2563 6.47172 14.9763 4.66172 14.9763C3.61172 14.9763 2.76172 14.1163 2.76172 13.0763Z" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="user">
+                        <img src="img/star.webp" alt="">
+                    </div>
+                </div>
+                <div class="search-wrapper">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M22 22L20 20" stroke="#7F879E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                    <input type="search" placeholder="Search">
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="All">All</option>
+                            <option value="Candidates">Candidates</option>
+                            <option value="Candidates">Candidates</option>
+                        </select>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.29995 3.72916L5.58328 6.44582C5.26245 6.76666 4.73745 6.76666 4.41662 6.44582L1.69995 3.72916" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>               
+                </div>
+            </header>
+            <div class="content__row desk-row">
+                <div class="content__row-title">
+                    <div class="content__row-title__column">
+                        <h5>My interviews</h5>
+                        <p class="p3">48 interviews</p>
+                    </div>
+                    <div class="mobile-sort date-calendar-js">
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 2V4.25" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 2V4.25" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.625 7.3175H15.375" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15.75 6.875V13.25C15.75 15.5 14.625 17 12 17H6C3.375 17 2.25 15.5 2.25 13.25V6.875C2.25 4.625 3.375 3.125 6 3.125H12C14.625 3.125 15.75 4.625 15.75 6.875Z" stroke="#151B33" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7713 10.775H11.778" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.7713 13.025H11.778" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.99588 10.775H9.00262" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.99588 13.025H9.00262" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.22049 10.775H6.22723" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.22049 13.025H6.22723" stroke="#151B33" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                               
+                    </div>
+                </div>
+                <div class="content__row-action">
+                    <p class="p3">View:</p>
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="Calendar">Calendar</option>
+                            <option value="Newest">Newest</option>
+                            <option value="Newest">Newest</option>
+                        </select>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.29995 3.72916L5.58328 6.44582C5.26245 6.76666 4.73745 6.76666 4.41662 6.44582L1.69995 3.72916" stroke="#1B2124" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>                            
+                    </div>
+                </div>
+            </div>
+            <div class="content__inner content-fluid-full">
+                <div class="interview-calendar">
+                    <img src="img/calendar3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="popup">
+        <div class="popup-object notifications-popup">
+            <div class="title-row">
+                <div class="h2">Notifications (218)</div>
+                <div class="notification-close p-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.666 12.6667L3.33331 3.33395" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 3.33395L3.33398 12.6667" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                </div>                     
+            </div>
+            <div class="notifications-popup__inner">
+                <ul>
+                    <li>
+                        <div class="img">
+                            <img width="24" height="24" src="img/icons/document-upload.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Application Submitted</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img width="24" height="24" src="img/icons/timer.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Application Under Review</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img width="24" height="24" src="img/icons/warning-2.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Warning message</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img user">
+                            <img width="44" height="44" src="img/devs/2.webp" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Warning message</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img width="24" height="24" src="img/icons/information.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Patch Note Update to 2.0</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img">
+                            <img width="24" height="24" src="img/icons/document-previous.svg" alt="">
+                        </div>
+                        <div class="description">
+                            <p>Application Rejected</p>
+                            <p>Sep 4, 2021 at 12:14 am</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn neutral">Mark all as read</div>
+            </div>
+        </div>
+        <div class="popup-object company__edit-popup">
+            <div class="title-row">
+                <div class="h1">Edit company information</div>
+                <div class="p-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.666 12.6667L3.33331 3.33395" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 3.33395L3.33398 12.6667" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                </div>                     
+            </div>
+            <div class="company__edit-popup__inner">
+                <form action="#">
+                    <div class="input-group">
+                        <label for="email" class="label4">Company name</label>
+                        <div class="input-wrapper">
+                            <p class="error-text">Error text</p>
+                            <input name="name" type="text" value="Paypal" required>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.99983 22H15.9998C20.0198 22 20.7398 20.39 20.9498 18.43L21.6998 10.43C21.9698 7.99 21.2698 6 16.9998 6H6.99983C2.72983 6 2.02983 7.99 2.29983 10.43L3.04983 18.43C3.25983 20.39 3.97983 22 7.99983 22Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8 6V5.2C8 3.43 8 2 11.2 2H12.8C16 2 16 3.43 16 5.2V6" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 13V14C14 14.01 14 14.01 14 14.02C14 15.11 13.99 16 12 16C10.02 16 10 15.12 10 14.03V13C10 12 10 12 11 12H13C14 12 14 12 14 13Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.65 11C19.34 12.68 16.7 13.68 14 14.02" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.62012 11.27C4.87012 12.81 7.41012 13.74 10.0001 14.03" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="label4">Field:</label>
+                        <div class="input-wrapper">
+                            <p class="error-text">Error text</p>
+                            <input name="filed" type="text" value="Streaming" required>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.4502 2V22" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.9502 4L15.0502 7.5C18.3502 8.9 18.3502 11.3 15.2502 12.9L6.9502 17" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="label4">Employees:</label>
+                        <div class="input-wrapper">
+                            <p class="error-text">Error text</p>
+                            <input name="employees" type="text" value="Webflow Developer Test" required>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" stroke="#47D18C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.5901 22C20.5901 18.13 16.7402 15 12.0002 15C7.26015 15 3.41016 18.13 3.41016 22" stroke="#47D18C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="secondary btn">
+                            Save Changes
+                        </button>
+                        <button class="btn neutral">
+                            Discard
+                        </button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="popup-object payment-popup">
+            <div class="title-row">
+                <div class="h2">Payment details</div>
+                <div class="notification-close p-close">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.666 12.6667L3.33331 3.33395" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.6667 3.33395L3.33398 12.6667" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>   
+                </div>                     
+            </div>
+            <div class="payment-popup__inner">
+                <div class="side-blocks">
+                    <div class="side-block payment-block">
+                        <div class="h3">Payment plan</div>
+                        <div class="grid">
+                            <div class="h1">
+                                Start
+                            </div>
+                            <div class="content">
+                                <p>11,99 US$/mo <br> Annual plan, paid monthly </p>
+                                <a href="#" class="btn secondary">Upgrade</a>
+                            </div>
+                        </div>
+                         <button class="edit">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.84226 3.62605L3.36893 9.41938C3.16226 9.63938 2.96226 10.0727 2.92226 10.3727L2.67559 12.5327C2.58893 13.3127 3.14893 13.846 3.92226 13.7127L6.06893 13.346C6.36893 13.2927 6.78893 13.0727 6.99559 12.846L12.4689 7.05271C13.4156 6.05271 13.8423 4.91271 12.3689 3.51938C10.9023 2.13938 9.78893 2.62605 8.84226 3.62605Z" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M7.92969 4.59375C8.21635 6.43375 9.70969 7.84042 11.563 8.02708" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>                                
+                         </button>      
+                    </div>
+                    <div class="side-block payment-block">
+                        <div class="payment-item">
+                            <div class="h3">Payment method</div>
+                            <p>Visa ending ****5864</p>
+                            <a href="#">View billing history</a>
+                            <div class="payment-add">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.29785 8.35156H12.2979" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.29785 12.3516V4.35156" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-block payment-block">
+                        <div class="payment-item">
+                            <div class="h3">Billing contact</div>
+                            <p>Add billing contact</p>
+                            <div class="payment-add">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.29785 8.35156H12.2979" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.29785 12.3516V4.35156" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                        <div class="payment-item">
+                            <div class="h3">Billing address</div>
+                            <p>Add billing address</p>
+                            <div class="payment-add">
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.29785 8.35156H12.2979" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.29785 12.3516V4.35156" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-row">
+                     <button class="btn secondary">
+                         Save Changes
+                     </button>
+                     <button class="btn neutral">
+                         Discard
+                     </button>
+                </div>
+            </div>
+        </div>
+        <div class="popup-object calendar-popup">
+            <div class="calendar-popup__inner">
+                <div class="calendar-wrapper">
+                    <img width="362" height="279" src="img/calendar2.png" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="popup-object interview-popup">
+            <div class="interview-close p-close">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.666 12.6667L3.33331 3.33395" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.6667 3.33395L3.33398 12.6667" stroke="#1B2124" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>   
+            </div>  
+            <div class="h1">Schedule an interview</div>
+            <form action="#">
+                <div class="input-group">
+                    <label for="text" class="label4">Interview Title</label>
+                    <div class="input-wrapper">
+                        <p class="error-text">Error text</p>
+                        <input name="text" type="text" placeholder="Type here" value="Type here" required="">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.35237 22.9785H16.3524C20.3724 22.9785 21.0924 21.3685 21.3024 19.4085L22.0524 11.4085C22.3224 8.96852 21.6224 6.97852 17.3524 6.97852H7.35237C3.08237 6.97852 2.38237 8.96852 2.65237 11.4085L3.40237 19.4085C3.61237 21.3685 4.33237 22.9785 8.35237 22.9785Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8.35156 6.97852V6.17852C8.35156 4.40852 8.35156 2.97852 11.5516 2.97852H13.1516C16.3516 2.97852 16.3516 4.40852 16.3516 6.17852V6.97852" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.3516 13.9785V14.9785C14.3516 14.9885 14.3516 14.9885 14.3516 14.9985C14.3516 16.0885 14.3416 16.9785 12.3516 16.9785C10.3716 16.9785 10.3516 16.0985 10.3516 15.0085V13.9785C10.3516 12.9785 10.3516 12.9785 11.3516 12.9785H13.3516C14.3516 12.9785 14.3516 12.9785 14.3516 13.9785Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22.0016 11.9785C19.6916 13.6585 17.0516 14.6585 14.3516 14.9985" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.9707 12.2485C5.2207 13.7885 7.7607 14.7185 10.3507 15.0085" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="text" class="label4">Select job for interview</label>
+                    <div class="select-wrapper has-icon">
+                        <svg class="select-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 10.9893H19C21 10.9893 22 9.98926 22 7.98926V5.98926C22 3.98926 21 2.98926 19 2.98926H17C15 2.98926 14 3.98926 14 5.98926V7.98926C14 9.98926 15 10.9893 17 10.9893Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5 22.9893H7C9 22.9893 10 21.9893 10 19.9893V17.9893C10 15.9893 9 14.9893 7 14.9893H5C3 14.9893 2 15.9893 2 17.9893V19.9893C2 21.9893 3 22.9893 5 22.9893Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 10.9893C8.20914 10.9893 10 9.1984 10 6.98926C10 4.78012 8.20914 2.98926 6 2.98926C3.79086 2.98926 2 4.78012 2 6.98926C2 9.1984 3.79086 10.9893 6 10.9893Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22.9893C20.2091 22.9893 22 21.1984 22 18.9893C22 16.7801 20.2091 14.9893 18 14.9893C15.7909 14.9893 14 16.7801 14 18.9893C14 21.1984 15.7909 22.9893 18 22.9893Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                                                                           
+                        <select class="p2">
+                            <option value="Ui designer">Ui designer</option>
+                            <option value="Native">Engeneering</option>
+                            <option value="Native">Engeneering</option>
+                        </select>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9987 7.45117L10.1087 12.3412C9.53115 12.9187 8.58615 12.9187 8.00865 12.3412L3.11865 7.45117" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="text" class="label4">Select candidates</label>
+                    <div class="select-wrapper has-icon">
+                        <img class="user-icon" width="38" height="38" src="img/devs/3.webp" alt="">                                                                          
+                        <select class="p2">
+                            <option value="Anna  Lee">Anna  Lee</option>
+                            <option value="Native">Engeneering</option>
+                            <option value="Native">Engeneering</option>
+                        </select>
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.9987 7.45117L10.1087 12.3412C9.53115 12.9187 8.58615 12.9187 8.00865 12.3412L3.11865 7.45117" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="text" class="label4">Date </label>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <div class="select-wrapper has-icon"> 
+                                <svg class="select-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 2.57715V5.57715" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 2.57715V5.57715" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3.5 9.66724H20.5" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 9.07715V17.5771C21 20.5771 19.5 22.5771 16 22.5771H8C4.5 22.5771 3 20.5771 3 17.5771V9.07715C3 6.07715 4.5 4.07715 8 4.07715H16C19.5 4.07715 21 6.07715 21 9.07715Z" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.9945 14.2771H12.0035" stroke="#47D18C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.29529 14.2771H8.30427" stroke="#47D18C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.29529 17.2771H8.30427" stroke="#47D18C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                         
+                                <select class="p2">
+                                    <option value="June 12, 2019">June 12, 2019</option>
+                                    <option value="Native">Engeneering</option>
+                                    <option value="Native">Engeneering</option>
+                                </select>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9987 7.45117L10.1087 12.3412C9.53115 12.9187 8.58615 12.9187 8.00865 12.3412L3.11865 7.45117" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="select-wrapper has-icon">
+                                <svg class="select-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.1016 13.8271C21.1016 18.6571 17.1816 22.5771 12.3516 22.5771C7.52156 22.5771 3.60156 18.6571 3.60156 13.8271C3.60156 8.99715 7.52156 5.07715 12.3516 5.07715C17.1816 5.07715 21.1016 8.99715 21.1016 13.8271Z" stroke="#47D18C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.3516 8.57715V13.5771" stroke="#47D18C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.35156 2.57715H15.3516" stroke="#47D18C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                                                                                                                                            
+                                <select class="p2">
+                                    <option value="10:32 am">10:32 am</option>
+                                    <option value="Native">Engeneering</option>
+                                    <option value="Native">Engeneering</option>
+                                </select>
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14.9987 7.45117L10.1087 12.3412C9.53115 12.9187 8.58615 12.9187 8.00865 12.3412L3.11865 7.45117" stroke="#7F879E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="text" class="label4">Description</label>
+                    <div class="textarea-wrapper">
+                        <textarea placeholder="Add description">Add description</textarea>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn neutral">
+                        Discard
+                    </button>
+                    <button class="btn secondary">
+                        Create
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="layout"></div>
+    </div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.3/swiper-bundle.min.js" integrity="sha512-xHBRcVjlUJjtDPdyWHU1h7H3/ydeE8NU+hqZg9eoP0DpIrc5iyxV1oRBrgp2FqFYJodZyHSAtWt5GDu2RUdSfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/slideToggle.min.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>
+
+
